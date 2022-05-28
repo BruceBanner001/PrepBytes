@@ -1,0 +1,48 @@
+h1{
+    color:rgba(218, 31, 6, 0.918);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-stretch: narrower;
+    opacity:1;
+}
+h2{
+    color:rgb(248, 74, 11);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight:bolder;
+    opacity:1;
+}
+ol{
+    color:rgb(165, 37, 37);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    opacity:1;
+}
+.strike{
+    text-decoration: line-through;
+    font-weight: bolder;
+}
+.highlight{
+    font-weight: bolder;
+    background-color: rgb(186, 223, 24);
+}
+ul{
+    letter-spacing: 5px;
+    line-height: 19px;
+    font-size: large;
+    color:brown;
+}
+p{
+    color:rgb(199, 99, 27);
+    opacity:1;
+}
+.line{
+    font-style: oblique;
+    text-decoration: underline;
+}
+.home{
+    font-weight: bold;
+    font-size: large;
+    font-style: oblique;
+    background-color: rgb(208, 228, 122);
+}
