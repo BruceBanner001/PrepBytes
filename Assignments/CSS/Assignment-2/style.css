@@ -1,0 +1,99 @@
+body{
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: 1366px 768px;
+}
+.header{
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+#header_1, #header_2, #header_3{
+    flex-direction: row;
+    border: 10px outset red;
+    width: 20%;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 20%;
+    font-size: 4ch;
+    background-color: #E6BA95;
+}
+#register{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#offers{
+    border: 2px solid red;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: lightgray;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    text-decoration: underline;
+   
+}
+#form{
+    border: 4px solid #990000;
+    background-color: #7F8487;
+    text-align: center;
+    color: red;
+    padding: 20px 25px 50px 25px;
+    border-radius: 10%;
+}    
+input[name="Email"], [type="text"], [id="age"], [type="number"]::placeholder { 
+    text-align: center;
+}
+#menu_title{
+    text-align: center;
+    font-size: 1cm;
+    border: 10px outset red;
+    width: 36%;
+    margin-left: 32%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20%;
+    background-color: #E6BA95;
+}
+#food_items{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.food{
+    flex-direction: row;
+    border: 2px solid red;
+    width: 25%;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 40px;
+    background-color: #14C38E;
+}
+#contact{
+    border:2px solid black;
+    height: max-content;
+    background-color: #78938A;
+    padding-left: 50px;
+}
+#contact p{
+    font-size: 0.6cm;
+}
+li{
+    font-size: large;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
