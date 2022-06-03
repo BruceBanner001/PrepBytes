@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradients</title>
+        <style>
+            .color{
+                width: 200px;
+                height: 200px;
+                background-image: linear-gradient(to bottom,green,violet);
+            }
+            .deg0{
+                width: 200px;
+                height: 200px;
+                background-image: linear-gradient(180deg,green 60%,violet);
+            }
+            .radial{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-image: radial-gradient(red 10%,green 20%,yellow 70%);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>To Top to Bottom (DEFAULT)</h1>
+        <div class="color"></div><hr>
+        <div class="deg0"></div><hr>
+        <div class="radial"></div>
+        <br><hr>
+        </body>
+</html>
