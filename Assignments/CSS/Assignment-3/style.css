@@ -1,0 +1,143 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: darkgrey;
+    font-family: 'Nunito', sans-serif;
+}
+.header {
+    border: 8px outset red;
+    box-shadow: 10px 10px rgba(8, 243, 98, 0.74);
+    width: 30%;
+    text-align: center;
+    border-radius: 15%;
+    margin-left: 35%;
+}
+.middle_content{
+    border: 5px outset rgb(94, 4, 4);
+    width: 100%;
+    height: 600px;
+}
+.items{
+    width: 20%;
+    height: 180px;
+    border: 8px outset red;
+    border-radius: 35px;
+    box-shadow: 10px 10px rgba(8, 243, 98, 0.74);
+    float: left;
+    background-color: lavenderblush;
+    color: black;
+    text-align: center;
+    text-shadow: 1px 1px rgb(6, 173, 109);
+}
+.address{
+    margin: 3% 25% 5% 4%;
+    font-size: 25px;
+    font-weight: 950;
+}
+.image{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+.content1{
+    margin-top: 6%;
+    margin-left: 4%;
+    font-size: 20px;
+    font-weight: 950;
+}
+.form1{
+    float: right;
+    margin-top: 6%;
+    margin-right: 5%;
+    text-align: center;
+}
+#number{
+    text-align: center;
+}
+#submit{
+    color: red;
+    border-radius: 20px;
+    background-color: aqua;
+    border: 1px outset blue;
+}
+.bottom{
+    width: 60%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 5px;
+    border: 5px outset rgb(148, 81, 4);
+    background-color: rgb(21, 179, 29);
+    text-align: center;
+}
+.welcome{
+    color: rgb(9, 9, 136);
+    font-style: oblique;
+    text-shadow: 1px 1px gold;
+}
+.fruits{
+    width: 48%;
+    height: fit-content;
+    float: left;
+    margin: 1%;
+    color: black;
+    background-color: #E9D5CA;
+    font-style: italic;
+    line-height: 1.5;
+}
+.vegetables{
+    width: 48%;
+    height: fit-content;
+    float: right;
+    margin: 1%;
+    color: black;
+    background-color: #E9D5CA;
+    font-style: italic;
+    line-height: 1.5;
+}
+.others{
+    clear: both;
+    margin: 1%;
+    color: black;
+    background-color: #E9D5CA;
+    font-style: italic;
+    line-height: 1.5;
+}
+.style{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(88, 12, 88);
+}
+.discount{
+    width: 30%;
+    height: 80px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    background-color: greenyellow;
+    border: 8px outset red;
+    box-shadow: 10px 10px rgba(8, 243, 98, 0.74);
+    border-radius: 30px;
+    color: blue;
+    text-shadow: 1px 1px gold;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    
+}
+.offer{
+    font-style: oblique;
+    font-size: 16px;
+    float: left;
+    font-weight: 900;
+    font-size: large;
+    margin-left: 10px;
+}
+.percent{
+    font-style: oblique;
+    font-size: 16px;
+    float: right;
+    font-weight: 900;
+    font-size: large;
+    margin-right: 10px;
+}
