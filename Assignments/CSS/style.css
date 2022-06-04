@@ -1,0 +1,122 @@
+header{
+    border: 2px solid black;
+    text-align: center;
+    font-size: 2em;
+    background-image: linear-gradient(to right, red, violet, lightblue);
+}
+#navigation{
+    border: 2px solid red;
+    margin: 5vh 30vw;
+    padding-left: 14vw;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: aqua;
+}
+.info{
+    border: 2px solid darkgreen;
+    width: 30%;
+    height: 110px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#one{
+    padding-top: 20px;
+}
+#two{
+    padding-top: 30px;
+}
+#three{
+    padding-top: 20px;
+}
+.heading1{
+    border: 1px solid black;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 4px;
+    margin: 20px 0px;
+    background-image: linear-gradient(to right, red, lightblue, red);
+}
+.top{
+    border: 1px solid green;
+    margin: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    text-align: center;
+    font-weight: bolder;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: underline;
+    background: rgb(36,0,6);
+    background: radial-gradient(
+        circle, rgba(36,0,6,0.23011202772124473) 0%, 
+        rgba(9,9,121,1) 10%, 
+        rgba(8,140,114,0.6362744927072391) 53%, 
+        rgba(7,156,134,1) 67%, rgba(7,158,138,1) 68%, 
+        rgba(0,212,255,1) 80%); 
+}
+.top_students{
+    border: 2px solid orangered;
+    margin: 10px;
+    height: 14vh;
+    padding: 3vh;
+    border-radius: 20px;
+    box-sizing: border-box;
+    line-height: 20px;
+    color: darkred;
+}
+.others{
+    display: grid;
+    grid-template-areas: 
+    "box box box box box box box box"
+    "box1 box1 box2 box2 box3 box3 box3 box4"
+    "box5 box5 box5 box5 box5 box5 box5 box4"
+    "box6 box6 box6 box6 box6 box6 box6 box6";
+    text-align: center;
+    margin: 12px 0px;
+    gap: 10px 15px;
+    padding: 20px 0px;
+    color: white;
+}
+.box{
+    grid-area: box;
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: darkgray;
+}
+.box1{
+    grid-area: box1;
+    background-color: violet;
+}
+.box2{
+    grid-area: box2;
+    background-color:blue;
+}
+.box3{
+    grid-area: box3;
+    background-color: skyblue;
+}
+.box4{
+    grid-area: box4;
+    background-color: lightgreen;
+}
+.box5{
+    grid-area: box5;
+    background-color: gold;
+}
+.box6{
+    grid-area: box6;
+    background-color: sandybrown;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: black;
+}
