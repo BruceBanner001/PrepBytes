@@ -136,14 +136,19 @@ a{
     position: absolute;
     bottom: 1vh;
     right: 38vw;
+    margin-bottom: -30px;
+    margin-right: -10px;
 }
-/*Add New List*/
+/*Add New List and New Item*/
 .filter{
     filter: blur(5px);
     z-index: 1;
 }
 .add{
     color:red;
+    font-size: x-large;
+}
+.textbox{
     font-size: x-large;
 }
 .add_button{
@@ -164,7 +169,7 @@ a{
     height: 200px;
     z-index: 1;
     position: fixed;
-    top: 40%;
+    top: 35%;
     left: 36%;
     z-index: 1;
     border-radius: 12px;
