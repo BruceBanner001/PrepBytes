@@ -1,0 +1,575 @@
+html{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+/* For Smart phones */
+@media screen and (max-width: 480px){
+    /* Home Page */
+    .main{
+        margin: 0%;
+    }
+    .header{
+        height: 90px;
+        box-sizing: border-box;
+        padding: 10px;
+        align-items: center;
+        margin-top: 1%;
+    }
+    #head{
+        font-size: 10vw;
+        width: fit-content;
+        height: fit-content;
+        float: left;
+    }
+    #tasks{
+        float: right;
+        font-size: 8vw;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 3%;
+        margin-top: 3%;
+    }
+    .item{
+        display: none;
+    }
+    .fa-plus-circle{
+        font-size: 10vw;
+        margin-top: 2px;
+        color: orangered;
+    }
+    .fa-plus-circle:active{
+        color: red;
+    }
+    a{
+        text-decoration: none;
+    }
+    .main_content{
+        width: 90%;
+        margin-top: 20px;
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+    }
+    .main_content div{
+        border-radius: 12px;
+        padding: 10px;
+    }
+    .todo{
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 7px 7px rgb(228, 204, 204);
+        margin-bottom: 5vw;
+        height: fit-content;
+    }
+    .list_head{
+        text-align: center;
+        font-size: 4vw;
+        
+    }
+    .list_completed{
+        display: none;
+    }
+    .list_pending{
+        display: none;
+    }
+    .list_head + hr{
+        display: none;
+    }
+    p{
+        margin: 1%;
+    }
+
+    /*Style for Paris.html*/
+    .bck{
+        display: none;
+    }
+    .paris_main{
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: fit-content;
+        position: relative;
+        top: 5vw;
+    }
+    .paris_header {
+        font-size: 8vw;
+    }
+    .back a{
+        font-size: 8vw;
+        position: absolute;
+        top: 1.3vw;
+        left: 10vw;
+    }
+    .fa-arrow-circle-left{
+        color: orangered;
+    }
+    .fa-arrow-circle-left:active{
+        color: red;
+    }
+    .paris_tasks{
+        width: 80%;
+        border-radius: 12px;
+        padding: 5px;
+        height: 80vw;
+        margin-left: 10%;
+        margin-top: 10%;
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 10px 7px rgb(228, 204, 204);
+        position: relative;
+        left: 1vw;
+        bottom: -8vw;
+    }
+    
+    .list_head1{
+        text-align: center;
+        font-size: 6vw;
+        color: rgb(207, 15, 15);
+    }
+    .list_completed1{
+        text-align: right;
+        text-decoration: line-through;
+        text-decoration-color: red;
+        color: rgb(230, 47, 47);
+        font-size: 5vw;
+    }
+    .list_pending1{
+        text-align: center;
+        font-size: 5vw;
+    }
+    .paris_tasks a{
+        position: absolute;
+        right: 5vw;
+        bottom: 5vw;
+    }
+
+    /*Add New List and New Item*/
+
+    .filter{
+        filter: blur(5px);
+        z-index: 1;
+    }
+    .add{
+        color:red;
+        font-size: 7vw;
+    }
+    .textbox{
+        border: 2px solid black;
+        font-size: 5vw;
+        position: fixed;
+        top: 55vw;
+        left: 20vw;
+        margin-top: 5vw;
+    }
+    .add_button{
+        border: 3px solid red;
+        color: red;
+        font-size: 5vw;
+        width: 20vw;
+        display: inline-block;
+        border-radius: 20px;
+        background-color: orangered;
+        color: white;
+        position: fixed;
+        top: 74vw;
+        left: 40vw;
+    }
+    .popup_list{
+        text-align: center;
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 10px 7px rgb(228, 204, 204);
+        width: 90vw;
+        height: 47vw;
+        z-index: 1;
+        position: absolute;
+        top: 40vw;
+        left: 4vw;
+        z-index: 1;
+        border-radius: 12px;
+        background-color: white;
+    }
+}
+
+/*For Tablet Screen Size*/
+
+@media screen and (min-width: 480px) and (max-width: 900px){
+    .main{
+        margin: 0%;
+    }
+    .header{
+        height: 90px;
+        box-sizing: border-box;
+        padding: 10px;
+        align-items: center;
+        margin-top: 1%;
+    }
+    #head{
+        font-size: 13vw;
+        width: fit-content;
+        height: fit-content;
+        float: left;
+    }
+    #tasks{
+        float: right;
+        font-size: 8vw;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 3%;
+        margin-top: 6%;
+    }
+    .item{
+        display: none;
+    }
+    .fa-plus-circle{
+        font-size: 10vw;
+        margin-top: 2px;
+        color: orangered;
+    }
+    .fa-plus-circle:active{
+        color: red;
+    }
+    a{
+        text-decoration: none;
+    }
+    .main_content{
+        width: 90%;
+        margin-top: 20px;
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+    }
+    .main_content div{
+        border-radius: 12px;
+        padding: 10px;
+    }
+    .todo{
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 1.5vw 1.5vw rgb(228, 204, 204);
+        margin-bottom: 6vw;
+        height: fit-content;
+        margin-left: 5vw;
+    }
+    .list_head{
+        text-align: center;
+        font-size: 5vw;
+        
+    }
+    .list_completed{
+        display: none;
+    }
+    .list_pending{
+        display: none;
+    }
+    .list_head + hr{
+        display: none;
+    }
+    p{
+        margin: 1%;
+    }
+
+    /*Style for Paris.html*/
+    .bck{
+        display: none;
+    }
+    .paris_main{
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: fit-content;
+        position: relative;
+        top: 5vw;
+    }
+    .paris_header {
+        font-size: 8vw;
+    }
+    .back a{
+        font-size: 8vw;
+        position: absolute;
+        top: 1.3vw;
+        left: 10vw;
+    }
+    .fa-arrow-circle-left{
+        color: orangered;
+    }
+    .fa-arrow-circle-left:active{
+        color: red;
+    }
+    .paris_tasks{
+        width: 80%;
+        border-radius: 12px;
+        padding: 5px;
+        height: 80vw;
+        margin-left: 10%;
+        margin-top: 10%;
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 10px 7px rgb(228, 204, 204);
+        position: relative;
+        left: 1vw;
+        bottom: -8vw;
+    }
+    
+    .list_head1{
+        text-align: center;
+        font-size: 6vw;
+        color: rgb(207, 15, 15);
+    }
+    .list_completed1{
+        text-align: right;
+        text-decoration: line-through;
+        text-decoration-color: red;
+        color: rgb(230, 47, 47);
+        font-size: 5vw;
+    }
+    .list_pending1{
+        text-align: center;
+        font-size: 5vw;
+    }
+    .paris_tasks a{
+        position: absolute;
+        right: 5vw;
+        bottom: 5vw;
+    }
+
+    /*Add New List and New Item*/
+
+    .filter{
+        filter: blur(5px);
+        z-index: 1;
+    }
+    .add{
+        color:red;
+        font-size: 7vw;
+    }
+    .textbox{
+        border: 2px solid black;
+        font-size: 5vw;
+        position: fixed;
+        top: 55vw;
+        left: 20vw;
+        margin-top: 5vw;
+    }
+    .add_button{
+        border: 3px solid red;
+        color: red;
+        font-size: 5vw;
+        width: 20vw;
+        display: inline-block;
+        border-radius: 20px;
+        background-color: orangered;
+        color: white;
+        position: fixed;
+        top: 74vw;
+        left: 40vw;
+    }
+    .popup_list{
+        text-align: center;
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 10px 7px rgb(228, 204, 204);
+        width: 90vw;
+        height: 47vw;
+        z-index: 1;
+        position: absolute;
+        top: 40vw;
+        left: 4vw;
+        z-index: 1;
+        border-radius: 12px;
+        background-color: white;
+    }
+}
+
+/* For Desktop */
+
+@media screen and (min-width: 901px){
+    .main{
+        height: 80vh;
+        width: 70%;
+        box-sizing: border-box;
+        padding: 30px;
+        margin-top: 15vh;
+        margin-left: 15%;
+    }
+    .header{
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px;
+        align-items: center;
+    }
+    #head{
+        font-size: 300%;
+        width: fit-content;
+        height: fit-content;
+        float: left;
+    }
+    #tasks{
+        float: right;
+        font-size: 200%;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 3%;
+    }
+    .item{
+        color: grey;
+        font-weight: 100px;
+        width: 100px;
+    }
+    .fa-plus-circle{
+        font-size: 40px;
+        margin-top: 2px;
+        color: orangered;
+    }
+    .fa-plus-circle:hover{
+        color: red;
+    }
+    a{
+        text-decoration: none;
+    }
+    .item:hover{
+        color:red;
+    }
+    .main_content{
+        margin-top: 20px;
+        height: 70%;
+        box-sizing: border-box;
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .main_content div{
+        width: 25%;
+        border-radius: 12px;
+        padding: 10px;
+    }
+    .todo{
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 10px 7px rgb(228, 204, 204);
+    }
+    .list_head{
+        text-align: center;
+        font-size: 25px;
+        color: rgb(207, 15, 15);
+    }
+    .list_completed{
+        text-align: right;
+        text-decoration: line-through;
+        text-decoration-color: red;
+        color: rgb(230, 47, 47);
+        font-size: 23px;
+    }
+    .list_pending{
+        text-align: center;
+        font-size: 23px;
+    }
+    
+    /*Style for Paris.html*/
+    
+    .paris_main{
+        width: 50vw;
+        padding: 1vw;
+        margin-top: -5vw;
+        margin-left: 7vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .paris_header {
+        display: flex;
+        flex-direction: row;
+        font-size: 4vw;
+    }
+    .paris_header:before,
+    .paris_header:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 2px solid rgb(92, 86, 86);
+        margin: auto;
+    }
+    .back{
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5vw;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+    }
+    .bck{
+        color: grey;
+    }
+    .fa-arrow-circle-left{
+        color: orangered;
+    }
+    .fa-arrow-circle-left:hover{
+        color: red;
+    }
+    .paris_tasks{
+        width: 30vw;
+        border-radius: 1vw;
+        padding: 5px;
+        height: 28vw;
+        margin-left: 25%;
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 1vw 1vw rgb(228, 204, 204);
+        position: relative;
+        left: 1vw;
+        bottom: 1vw;
+    }
+    .paris_tasks a{
+        position: absolute;
+        bottom: 7vh;
+        right: 2vw;
+        margin-bottom: -30px;
+        margin-right: -10px;
+    }
+    .list_head1{
+        text-align: center;
+        font-size: 25px;
+        color: rgb(207, 15, 15);
+    }
+    .list_completed1{
+        text-align: right;
+        text-decoration: line-through;
+        text-decoration-color: red;
+        color: rgb(230, 47, 47);
+        font-size: 23px;
+    }
+    .list_pending1{
+        text-align: center;
+        font-size: 23px;
+    }
+    /*Add New List and New Item*/
+    .filter{
+        filter: blur(5px);
+        z-index: 1;
+    }
+    .add{
+        color:red;
+        font-size: x-large;
+    }
+    .textbox{
+        font-size: x-large;
+    }
+    .add_button{
+        border: 3px solid red;
+        color: red;
+        font-size: 17px;
+        width: 90px;
+        display: inline-block;
+        border-radius: 20px;
+        background-color: orangered;
+        color: white;
+    }
+    .popup_list{
+        text-align: center;
+        border: 2px solid rgb(233, 95, 95);
+        box-shadow: 10px 7px rgb(228, 204, 204);
+        width: 30%;
+        height: 200px;
+        z-index: 1;
+        position: fixed;
+        top: 35%;
+        left: 36%;
+        z-index: 1;
+        border-radius: 12px;
+        background-color: white;
+    }
+}
