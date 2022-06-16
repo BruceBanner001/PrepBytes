@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            b{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: larger;
+                color: brown;
+            }
+            strong{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body style="margin-left: 50px;">
+        <b>Q1.Difference between Flex Row and Column ?</b>
+            <p>Default Flex Direction is row</p>
+            <p>
+                This is a  CSS Property on the concept of Flex Module.
+                The flex-direction property specifies the direction of the flexible items. <br>
+                <strong>Flex Row:</strong><br>
+                The Child Containers will be placed Horizontally accroding to the Parent Container. <br>
+                <strong>Flex Column:</strong><br>
+                The Child Containers will be placed Vertically accroding to the Parent Container. <br>
+                <strong>Note:</strong> First we need to define display as Flex in Parent Container. Otherwise, it won't work.
+               <pre>
+                &lt;div class="container"&gt;
+                    &lt;div class="child"&gt;One&lt;/div&gt;
+                    &lt;div class="child"&gt;One&lt;/div&gt;
+                    &lt;div class="child"&gt;One&lt;/div&gt;
+                &lt;/div&gt;
+               </pre>
+            </p>
+            <b>Q2. Explain Inline, Internal and External Style Sheets ?</b>
+            <p>
+                <strong>Inline</strong>: <br>
+                An inline CSS is used to apply an <strong>Unique Style</strong> to a 
+                Single HTML Element. <br><br>
+                <strong>Internal:</strong>
+                It also add <strong>Unique Style</strong> to same type of HTML 
+                Elements or Class or ID in Single HTML File. We define Internal CSS inside an <strong><head></strong> 
+                Tag. <br> <br>
+                <strong>External:</strong>
+                It is also same as Internal CSS but with one difference.
+                External means we save styles in different file end with .css.
+                We can use this External Styles as much as want in any number of 
+                HTML files. In order to use that we have to <strong>link</strong>
+                the CSS File using <strong>link tag.</strong>
+            </p>
+            <b>Q3.Justify-content allows you to do what?</b> <br>
+            <p>
+                &emsp;This is a CSS Property on the concept of Flex Module. It defines
+                the browser how to distribute the space between or around contents
+                accroding to the Parent Container.
+            </p>
+            <b>Q4.Difference between absolute and relative positioning ?</b><br>
+            <p>
+                <strong>Position: relative:</strong><br>
+                Places an element relative to its 
+                current position without changing the layout around it. <br>
+                <strong>Position: absolute:</strong><br>
+                places an element relative to its parent's 
+                position and changing the layout around it.
+            </p>
+            <b>Q5.What is grid-template columns used for ?</b><br>
+            <p>
+                &emsp;The grid-template-columns property specifies the number 
+                (and the widths) of columns in a grid layout. 
+                The values are a space separated list, where each value specifies 
+                the size of the respective column.
+            </p>
+            <b>Q6.What is the z-index in CSS ?</b><br>
+            <p>
+                &emsp;The z-index property specifies the stack order of an element. 
+                An element with greater stack order is always in front of an element 
+                with a lower stack order. <br>
+                &emsp;Only works with <strong>Positions</strong> Only. We can also use Positive and Negative Values.
+            </p>
+            <b>Q7. Difference between Margin and Padding ?</b><br>
+            <p>
+                These are CSS Elements.We can provide space between elements 
+                of the four sides top, bottom, right and left. 
+                Margin will applied outside the border. 
+                Padding will applied inside the border.
+                We can use values in like <strong>%, px, vh, vw, etc</strong>.
+            </p>
+    </body>
+</html>
