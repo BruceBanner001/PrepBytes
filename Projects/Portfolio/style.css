@@ -1,0 +1,743 @@
+html{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#right-arrow hr{
+    font-size: 30px;
+}
+@media screen and (min-width:1366px) {
+    body{
+        background-color: #F7F7F7;
+        margin: 0px;
+    }
+    .back-color{
+        background-color: #FBF3E4;
+    }
+    .font1{
+        font-size: 37px;
+        color: #105652;
+        font-weight:600;
+    }
+    .font2{
+        font-size: 30px;
+        color: #105652;
+        font-weight: bold;
+    }
+    
+    .header{
+        height: 5vw;
+        display: grid;
+        grid-template-areas: 
+        "name home about portfolio resume contact empty";
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 10px;
+        grid-template-columns: 45%;
+    }
+    .name{
+        grid-area: name;
+        color: #105652;
+        font-size: 29px;
+        margin-top: 5px;
+    }
+    #home{
+        grid-area: home;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    #about{
+        grid-area: about;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    #portfolio{
+        grid-area: portfolio;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    #resume{
+        grid-area: resume;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    #contact{
+        grid-area: contact;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    
+    /* Section Home */
+    
+    
+    .home::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 349px;
+        width: 100%;
+        height: 200px;
+        background-image: url('./images/wave1.png');
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .home{
+        background-image: linear-gradient(315deg,#1a8d69 0%, #602b8b 100%);
+    }
+    #hi{
+        font-size: 40px;
+        color: #FCA738;
+        font-weight: 500;
+    }
+    #developer{
+        font-size: 40px;
+        color:#FBF3E4;
+        font-weight: bolder;
+    }
+    #get-ready{
+        color: #FBF3E4;
+        font-size: 18px;
+    }
+    #hire-me{
+        background-color: #09BEAD;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        box-shadow: 1px 15px 8px #0BBEAD69;
+        z-index: 2;
+        position: relative;
+    }
+    #hire-me a{
+        text-decoration: none;
+        color: #FBF3E4;
+        font-size: 16px;
+    }
+    
+    #get-resume{
+        background-color: #FCA738;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 19px;
+        left: 160px;
+        border-radius: 7px;
+        box-shadow: #F57F1769 1px 15px 8px;
+        z-index: 2;
+    }
+    #get-resume a{
+        text-decoration: none;
+        color: #FBF3E4;
+        font-size: 16px;
+    }
+    .home{
+        height:481px;
+        box-sizing: border-box;
+    }
+    .home .left{
+        float: left;
+        margin-left: 50px;
+        margin-top: 50px;
+        position: relative;
+    }
+    .home .right{
+        float: right;
+        position: relative;
+        z-index: 2;
+        margin-top: 11px;
+    }
+    .right img{
+        background: transparent;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    /* --------------------------- */
+    
+    .main{
+        width: 90%;
+        margin-left: 60px;
+    }
+    
+    /* Section About */
+    
+    .about{
+        background-color: #FFFFFF;
+        margin-top: 50px;
+        column-gap: 0px;
+        height: 585px;
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        border-radius: 25px;
+        box-shadow: rgb(236, 231, 231) -15px -15px 9px 18px;
+        font-weight: 500;
+    }
+    .about-left{
+        float: left;
+        background: transparent;
+    }
+    .about-right{
+        float: right;
+        width: 50%;
+        height: 585px;
+        padding-right: 25px;
+    }
+    #about-content-1, #about-content-2{
+        color: #105652;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #technologies{
+        position: absolute;
+        top: 370px;
+        font-size: 19px;    
+        height: 150px;
+        width: 45%;
+        color: #105652;
+        border-radius: 25px;
+        box-shadow: rgb(236, 231, 231) -1px -2px 9px 10px;
+        padding-top: 7px;
+        padding-left: 28px;
+    }
+    #languages{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .about hr{
+        width: 30%;
+        border: 4px solid #FCA738;
+        margin-left: 0px;
+        margin-top: -25px;
+    }
+    
+    /* Section MyPorfolio  */
+    
+    .my-portfolio{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 4px;
+    }
+    .my-portfolio hr{
+        width: 18%;
+        border: 4px solid #FCA738;
+        margin-left: 41%;
+        margin-bottom: 35px;
+    }
+    #project-images{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    
+    /* --------------------------- */
+    
+    
+    /* Section What People Say About Me */
+    
+    .say-about-me{
+        box-shadow: rgb(236, 231, 231) -1px -1px 10px 18px;
+        font-weight: 500;
+        margin-bottom: 80px;
+    }
+    #peoples-say-about-me{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 90px;
+        background-color: #FFFFFF;
+    }
+    .say-about-me-text{
+        text-align: center;
+    }
+    .say-about-me-text hr{
+        width: 35%;
+        margin-bottom: 45px;
+        margin-left: 33%;
+        border: 4px solid #FCA738;
+    }
+    .testimonial{
+        width: 25%;
+        box-sizing: border-box;
+        height: 30vw;
+        text-align: center;
+    }
+    .testimonial-more{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        height: 80px;
+        padding-top: 27px;
+        color: #FCA738;
+        box-sizing: border-box;
+    }
+    .testimonial-name{
+        font-size: 22px;
+        color: #373742;
+        font-weight: bold;
+    }
+    .testimonial-company{
+        font-size: 17px;
+        color: #7B7B88;
+    }
+    .testimonial p{
+        color: #4F4F53;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    /* --------------------------- */
+    
+    
+    /* Section Contact Me */
+    
+    .contact{
+        display: flex;
+        flex-direction: row;
+        box-shadow: rgb(236, 231, 231) 1px -15px 8px 15px;
+    }
+    .connect{
+        width: 50%;
+        padding-top: 60px;
+        padding-left: 50px;
+        background-color: #FFFFFF;
+    }
+    .send-me-messege{
+        width: 50%;
+        padding-top: 40px;
+        padding-left: 100px;
+        padding-bottom: 30px;
+    }
+    .contact-me-text{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .contact-me-text hr{
+        border: 4px solid #FCA738;
+        width: 19%;
+        margin-left: 37vw;
+    }
+    button{
+        width: 200px;
+        height: 40px;
+        background-color: #FCA738;
+        border: none;
+        border-radius: 15px;
+        color: #FFFFFF;
+        font-size: 17px;
+    }
+    .connect-text{
+        font-size: 18px;
+        color: #333333;
+    }
+    .contact-details{
+        font-size: 15px;
+        color: #858585;
+    }
+    .star{
+        color: red;
+    }
+    .textbox{
+        border: 1px solid #858585;
+        width: 80%;
+        height: 30px;
+        margin-top: 10px;
+        background-color:#FFFFFF;;
+        border-radius: 5px;
+    }
+    .textarea{
+        border: 1px solid #858585;
+        width: 80%;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    label{
+        font-size: 17px;
+    }
+    
+    .reserved{
+        margin-top: 30px;
+        text-align: center;
+        height: 80px;
+        box-sizing: border-box;
+        padding-top: 30px;
+        font-size: 19px;
+        font-weight: 600;
+        color: #333333;
+    }
+    form ::placeholder{
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        padding: 4px;
+        font-weight: 300;
+    }
+    /* Hidden */
+    #menu{
+        display: none;
+    }
+    #hi-mobile{
+        display: none;
+    }
+    .banner-guy-mobile{
+        display: none;
+    }
+    .about-me-guy-mobile{
+        display: none;
+    }
+}
+@media screen and (min-width:360px) and (max-width:480px) {
+    
+
+    .back-color{
+        background-color: #FBF3E4;
+    }
+    .font1{
+        font-size: 26px;
+        color: #105652;
+        font-weight:600
+    }
+    .font2{
+        font-size: 24px;
+        color: #105652;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+
+
+    /* Home Section */
+    body{
+        margin: 0;
+        background-color: #F7F7F7;
+    }
+    #home{
+        display: none;
+    }
+    #about{
+        display: none;
+    }
+    #portfolio{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+    #resume{
+        display: none;
+    }
+    #hi{
+        display: none;
+    }
+    .banner-guy{
+        display: none;
+    }
+    .header{
+        height: 60px;
+        box-sizing: border-box;
+        padding: 15px;
+        background-color: #FBF3E4;
+    }
+    .name{
+        float: left;
+        font-size: 20px;
+    }
+    #menu{
+        float: right;
+    }
+    .home{
+        background-image: linear-gradient(315deg,#1a8d69 0%, #602b8b 100%);
+    }
+    .home::after{
+        content: "";
+        background: url('./images/wave1.png');
+        position: absolute;
+        left: -80px;
+        top: 510px;
+        width: 700px;
+        height: 290px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+    #hi-mobile{
+        font-size: 28px;
+        color: #FCA738;
+    }
+    #developer{
+        font-size: 26px;
+        color: #FBF3E4;
+    }
+    #get-ready{
+        color: #FBF3E4;
+        font-size: 17px;
+    }
+    .left{
+        position: relative;
+    }
+    #hire-me{
+        background-color: #09BEAD;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        box-shadow: #0BBEAD69 1px 15px 8px;
+        margin-left: 25px;
+        margin-top: 40px;
+    }
+    #hire-me a{
+        text-decoration: none;
+        color: #FBF3E4;
+        font-size: 16px;
+    }
+    
+    #get-resume{
+        background-color: #FCA738;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 17px;
+        right: 30px;
+        border-radius: 7px;
+        box-shadow: #F57F1769 1px 15px 8px;
+    }
+    #get-resume a{
+        text-decoration: none;
+        color: #FBF3E4;
+        font-size: 16px;
+    }
+    .right{
+        margin-top: 28px;
+        position: relative;
+        z-index: 2;
+    }
+    .banner-guy-mobile{
+        width: 100vw;
+        margin-left: -4px;
+    }
+    
+    /* About Me Section */
+
+
+    .about{
+        margin-top: 25px;
+        height: 910px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .about-me-guy{
+        display: none;
+    }
+    .about-me-guy-mobile{
+        width: 100vw;
+        position: absolute;
+        top: 470px;
+    }
+    .about hr{
+        border: 4px solid #FCA738;
+        width: 35%;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    .about-right{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    #about-content-1, #about-content-2 {
+        color: #105652;
+        font-size: 18px;
+        word-spacing: 5px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .about-me-text{
+        position: absolute;
+        top: 1px;
+    }
+    .about hr{
+        position: absolute;
+        top: 75px;
+    }
+    #technologies{
+        position: absolute;
+        top: 675px;
+        width: 90%;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+    }
+    #technologies p{
+        color: #105652;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    #languages img{
+        margin: 10px;
+    }
+    #about-content-1{
+        position: absolute;
+        top: 75px;
+    }
+    #about-content-2{
+        position: absolute;
+        top: 320px;
+    }
+
+    /*-----------------------*/
+
+
+    /*My Porfolio Section*/
+
+    .portfolio{
+        display: none;
+    }
+    /*-----------------------*/
+
+
+    /*What People Say About Me Section*/
+
+    .testimonial-two, .testimonial-three{
+        display: none;
+    }
+    .say-about-me-text{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .say-about-me-text hr{
+        border: 4px solid #FCA738;
+        width: 87%;
+        margin-left: 25px;
+    }
+    .testimonial-one{
+        margin-top: 10px;
+        background-color: #FFFFFF;
+    }
+    .people{
+        margin-top: 20px;
+    }
+    .say-about-me{
+        text-align: center;
+    }
+    .testimonial-name{
+        color: #373742;
+        font-size: 21px;
+    }
+    .testimonial-company{
+        color: #7B7B88;
+        font-size: 17px;
+    }
+    .say-about-me p{
+        color: #4F4F53;
+        font-size: 21px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 67px;
+    }
+    .testimonial-more{
+        height: 65px;
+        box-sizing: border-box;
+        color: #FCA738;
+        font-size: 21px;
+        padding-top: 17px;
+    }
+    /*-----------------------*/
+
+
+    /*Contact Me Section*/
+
+    .contact-me-text{
+        height: 130px;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .contact-me hr{
+        border: 4px solid #FCA738;
+        width: 45%;
+        margin-left: 31%;
+    }
+    .contact{
+        background-color: #FFFFFF;
+    }
+    .connect{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .connect-text{
+        color: #333333;
+    }
+    .contact-details{
+        color: #858585;
+        font-size: 14px;
+    }
+    .connect{
+        margin-bottom: 50px;
+    }
+    label{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .textbox{
+        border: 1px solid #858585;
+        width: 95%;
+        height: 30px;
+        border-radius: 7px;
+    }
+    .textarea{
+        border: 1px solid #858585;
+        width: 95%;
+        height: 65px;
+        border-radius: 7px;
+    }
+    .star{
+        color: red;
+    }
+    .send-me-messege{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    form ::placeholder{
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        padding: 4px;
+        font-weight: 300;
+    }
+    button{
+        width: 180px;
+        height: 40px;
+        border-radius: 7px;
+        background-color: #FCA738;
+        color: #FFFFFF;
+        font-size: 17px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .reserved{
+        height: 70px;
+        margin-top: 50px;
+        font-size: 14px;
+        box-sizing: border-box;
+        color: #333333;
+        padding-top: 25px;
+        text-align: center;
+    }
+}
