@@ -49,3 +49,11 @@ console.log(arrayMethodThree);
 //Array = object
 
 console.log(typeof array);
+
+//Swap two variables without using creating another variable
+
+a = 30;
+b = 40;
+console.log(`a = ${a} b = ${b}`);
+
+console.log(`Swap of a = ${(a + b) - a} and b = ${(a + b) - b}`);
