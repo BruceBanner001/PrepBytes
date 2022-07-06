@@ -34,3 +34,27 @@ const Find_Digits = (N) =>
 	 return String(N).length;
 };
 
+
+// const Find_Digits = (N) => 
+// {
+//   let count = 0;
+//   if (N >= 1)
+//   count++;
+//   while(N / 10 >= 1){
+//     N /= 10;
+//     count++;
+//   }
+//   return count;
+// };
+
+// const Find_Digits = (N) => 
+// {
+//   let count = 0;
+//   while(N != 0){
+//     N = parseInt(N / 10);
+//     count++;
+//   }
+//   return count;
+// };
+
+console.log(Find_Digits(12345));
