@@ -5,6 +5,8 @@
 //We can define objects in 2 ways.
 //The order of entry of properties and methods aren't preserved in Objects. 
 //this means it will be automatically arranged in ascending order.
+//Objects converts the keys data types into string even if it isn't of string type. Basically all keys are of 
+// string type only.
 
 const mobile = {
     brand : 'OnePlus',
@@ -76,94 +78,42 @@ console.log(onePlus);
 console.log(samsung);
 console.log(redmi); // values will be undefined
 
-console.log('---------------------------');
+//06.07.2022
 
 
-// Unique Color Shirt in Array JS Handson
+//this keyword
 
+//I an object this refers to the name of the object.
+//Alone(global space) this refers to the Global Object(Window Object) 
+//In regular function, this also points to the Global Object(Window)
+//Strict Mode -(use strict), this refers to undefined.
+//use strict mode inside the function.
+//when use strict mode window objects are restricted.
 
-// function Unique_Shirts (arr,N) {
-//   let counts = {};
-//   for(i = 0; i < arr.length; i++){
-//     if(counts[arr[i]]){
-//       counts[arr[i]] += 1;
-//     }
-//     else{
-//       counts[arr[i]] = 1;
-//     }
-//   }
-//   return counts;
-// }
-// res = Unique_Shirts([3, 2, 4, 1, 2, 3], 6);
-// console.log(res);
+//Fat arrow function do not support hoisting.
+//function supports hoisting.
 
-// one = Object.values(res);
-// console.log(one);
-// count = 0;
-// for (j = 0; j < one.length; j++){
-//   if(one[j] === 1){
-//     count += 1;
-//     }
-// }
-// console.log(count);
+age = 2; // This will be added to Window
+console.log(age);
+console.log(this); //This is the window object.
 
-
-// let result = {};
-//   let count = 0;
-
-// function Unique_Shirts (arr,N) {
-  
-//   for(let i = 0; i < N; i++){
-//     if(result[arr[i]]){
-//       result[arr[i]] += 1;
-//     }
-//     else{
-//       result[arr[i]] = 1;
-//     }
-//   }
-//    resultValues = Object.values(result);
-//   for(let j = 0; j < resultValues.length; j++){
-//     if(resultValues[j] === 1){
-//       count += 1;
-//     }
-//   }
-//   return count;
-// }
-
-// console.log(Unique_Shirts([3, 2, 4, 1, 2, 2], 6));
-// console.log(resultValues);
-// console.log(result);
-
-const Inc_Arr = (array,N) => 
-{
-  // let result = array.map(item => item + 1);
-  // return result;
-  for(let i = 0; i < N; i++){
-    array[i] += 1;
-  }
-  return array;
-};
-
-console.log(Inc_Arr([1,2,3], 3));
-
-
-function Birthday_Game(arr,D ,M) {
-  let sum = 0;
-  let count = 0;
-  for(let i = 0 ; i < M; i++){
-    sum +=arr[i];
-  }
-  if(sum === D){
-    count++;
-  }
-  for(let i = M; i < arr.length; i++){
-    sum += arr[i];
-    sum -= arr[i-M];
-    if(sum === D){
-      count++;
-    }
-  }
-  return count;
+function add(){
+  'use strict'
+  console.log(this); //this window object will be undefined
+  console.log('Hello'); // This will print
 }
+add();
 
-console.log(Birthday_Game([2, 2, 1, 3, 2], 4, 2));
+// ------------------------------------------------------------
+
+//spread Operator
+
+let arr1 =[1,2,3,4,5,15];
+let arr2 =[6,7,8,9,10];
+let arr5 =[11,13,15];
+console.log(arr1.concat(arr2)); //concat arr1 and arr2
+//let arr3 = {...arr1,...arr2,...arr5}; //{0: 11, 1: 13, 2: 15, 3: 9, 4: 10, 5: 15}
+let arr4 = [...arr1,...arr2,...arr5];// concat arr1 and arr2
+console.log(arr4);
+
+//-----------------------------------------------------------------

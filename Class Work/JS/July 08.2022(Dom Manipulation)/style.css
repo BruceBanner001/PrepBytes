@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#one{
+    border: 2px solid grey;
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+#two{
+    border: 2px solid grey;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+#three{
+    border: 2px solid grey;
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+}
