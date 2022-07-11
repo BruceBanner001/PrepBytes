@@ -1,23 +1,45 @@
-.flex{
+#title{
+    color: royalblue;
+}
+.header{
+    height: 100px;
+    box-sizing: border-box;
+}
+button{
+    float: right;
+    width: 100px;
+    height: 40px;
+    margin-top: 25px;
+    margin-right: 100px;
+    background-color: gray;
+    border-radius: 10px;
+    border: none;
+}
+#login{
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.cards{
     display: flex;
     justify-content: space-evenly;
-    
+    flex-direction: row;
+    height: 400px;
+}
+#one, #two, #three{
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
 }
 #one{
     border: 2px solid grey;
-    width: 100px;
-    height: 100px;
     background-color: greenyellow;
 }
 #two{
     border: 2px solid grey;
-    width: 100px;
-    height: 100px;
     background-color: lightgreen;
 }
 #three{
     border: 2px solid grey;
-    width: 100px;
-    height: 100px;
     background-color: darkgreen;
 }
