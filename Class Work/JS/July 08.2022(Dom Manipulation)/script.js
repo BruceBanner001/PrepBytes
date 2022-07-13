@@ -11,6 +11,7 @@ function clickNow(){
     element1.innerHTML = `${welcome()}<span style="color: red;">${myName}</span>`;
     document.getElementsByClassName('cards')[0].style.flexDirection = 'column';
     element2[0].style.backgroundColor = onClickColorChange();
+    element5.setAttribute('src', './image2.jpg')
 }
 
 function welcome()
@@ -21,39 +22,22 @@ function welcome()
 function onClickColorChange(){
     return 'tomato';
 }
+const element3 = document.createElement('div');
+element3.className = 'newDiv';
+element3.id = 'newDiv';
+element3.setAttribute('for', 'newDivCreated');
+element3.setAttribute('value', 'created');
+element3.innerHTML = `<b> I am the new Div Created </b>`;
 
-// const element3 = document.createElement('div');
-// element3.className('newDiv');
-// element3.id('newDiv');
-// element3.setAttribute('for', 'newDiv');
-// element3.setAttribute('value', 'Nothing');
-// element3.innerHTML = `<b>This is New Div </b>`;
-// document.querySelector('div.new').appendChild(element3);
+document.querySelector('.new').appendChild(element3);
 
+// console.log(document.getElementsByClassName('new')[0]);
 
-// const element6 = document.createElement('div');
-// element6.className = "newDiv";
-// element6.id = "newDiv1";
-// element6.setAttribute("for","newDivCreated");
-// element6.setAttribute("value","created");
-// element6.innerHTML = `<b>I am the new Div Created</b>`;
+const element4 = document.getElementsByClassName('new');
+console.log(element4[0]);
 
-// console.log(element6);
+element4[0].removeChild(element3);
 
-// document.querySelector("div#description").appendChild(element6);
-
-// element1.removeChild(element6);
-
-// const element7 = document.createElement('img');
-// element7.setAttribute("src","./image1.jpg");
-// document.querySelector("div#description").appendChild(element7);
-
-// function changeText() {
-//     const element4 = document.getElementById("description");
-//     const element5 = document.getElementsByTagName("button");
-//     element5[0].style.backgroundColor = "blue";
-//     element4.style.color = 'green';
-//     document.getElementsByTagName("button")[0].style.backgroundColor = 'yellow';
-//     element7.setAttribute("src","./image2.jpg");
-// }
-
+const element5 = document.createElement('img');
+element5.setAttribute('src', './image1.jpg');
+document.querySelector('.new').appendChild(element5);

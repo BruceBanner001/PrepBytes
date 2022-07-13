@@ -16,7 +16,7 @@ const mobile = {
     displayInfo: function(){
         console.log(`
         The mobile I am using is of brand ${mobile['brand']} which 
-        has a camera of ${mobile.camera} and has a weight of ${mobile.weight} 
+        has a camera of ${this.camera} and has a weight of ${mobile.weight} 
         which supports ${mobile[11]}`);
     }
 }

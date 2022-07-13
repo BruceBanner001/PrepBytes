@@ -1,0 +1,74 @@
+body{
+    background-color: #3D087B;
+    margin-top: 40px;
+}
+@font-face {
+    font-family: BauhausHeavyBT;
+    src: url(./fonts/BauhausHeavyBT.ttf);
+}
+
+
+/* Left side  */
+
+#left{
+    border: 2px solid red;
+    width: 41vw;
+    float: left;
+    margin-left: 9vw;
+    height: 800px;
+}
+#left-header{
+    border: 2px solid orangered;
+    height: 88px;
+}
+#left-header-1{
+    float: left;
+    border: 2px solid orange;
+}
+#left-header-2{
+    border: 2px solid green;
+    float: right;
+    width: 40%;
+    background-color: #FFFFFF;
+    color: #858585;
+}
+#set-alarm{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+}
+#good-banner{
+    height: 85px;
+    border: 1px solid #EDEDED;
+    margin-top: 20px;
+    background-color: #4c0f91;
+    color: white;
+    font-size: 28px;
+    font-family: BauhausHeavyBT;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+#footer-left{
+    margin-top: 20px;
+}
+#footer-left-1{
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+    font-size: 25px;
+    color: white;
+    float: left;
+    width: 50%;
+    height: 50px;
+    margin-top: 13px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#footer-left-2{
+    width: 48%;
+    height: 200px;
+    float: right;
+    background-color: #5513a0;
+    color: #F25CFE;
+    font-size: 16px;
+}
