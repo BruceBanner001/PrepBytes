@@ -12,9 +12,9 @@ body{
     height: 860px;
     background-color: #3D087B ;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 #logo{
     position: absolute;
     top: 34px;
@@ -217,6 +217,17 @@ body::-webkit-scrollbar {
     color: #8A11BF;
     font-family: 'Manrope', sans-serif;
 }
+#time-banner-span{
+    background-color: span;
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: -100px;
+    width: 100px;
+    height: 150px;
+    border-radius: 50% 50% 50% / 60% ;
+    box-shadow: 2px 0 0 0 white;
+}
 #time-text{
     width: fit-content;
     position: absolute;
@@ -309,6 +320,18 @@ body::-webkit-scrollbar {
     box-sizing: border-box;
     font-family: BauhausHeavyBT;
     padding-top: 40px;
+}
+#message-screen-span{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 0px;
+    border-top: 15px solid white;
+    top: 53px;
+    right: -35px;
+    transform: rotate(60deg);
 }
 #image-screen{
     position: absolute;
