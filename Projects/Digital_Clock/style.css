@@ -12,9 +12,9 @@ body{
     height: 860px;
     background-color: #3D087B ;
 }
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
-} */
+}
 #logo{
     position: absolute;
     top: 34px;
