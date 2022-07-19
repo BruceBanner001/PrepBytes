@@ -70,14 +70,15 @@ function clickedAlarm(){
     wakeUpTime1 = selected1.options[selected1.selectedIndex].value;
 
     lunchTime1 = selected2.options[selected2.selectedIndex].value;
-    // console.log(lunchTime1);
 
     napTime1 = selected3.options[selected3.selectedIndex].value;
-    // console.log(napTime1);
 
     sleepTime1 = selected4.options[selected4.selectedIndex].value;
-    // console.log(sleepTime1);
     
+    element3.style.display = 'none';
+    element4.style.display = 'none';
+    element5.style.display = 'none';
+    element6.style.display = 'none';
 }
 
 //For Updating Time
@@ -130,40 +131,24 @@ function currentTime(){
         element1.innerText = 'GOOD MORNING!! WAKE UP !!';
         element2.innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
         image.setAttribute('src', './images/Good-Morning.png');
-        element3.style.display = 'none';
-        element4.style.display = 'none';
-        element5.style.display = 'none';
-        element6.style.display = 'none';
     }
     if(nowHour === lunchTime1){
         element1.innerText = 'GOOD AFTERNOON !! TAKE SOME SLEEP';
         element2.innerText = "LET'S HAVE SOME LUNCH !!";
         image.setAttribute('src', './images/Good-Afternoon.png');
-        element3.style.display = 'none';
-        element4.style.display = 'none';
-        element5.style.display = 'none';
-        element6.style.display = 'none';
-    }
+    } 
     if(nowHour === napTime1){
         element1.innerText = 'GOOD EVENING !!';
         element2.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
         element2.style.paddingTop = '20px';
         element2.style.paddingRight = '20px';
         image.setAttribute('src', './images/Good-Evening.png');
-        element3.style.display = 'none';
-        element4.style.display = 'none';
-        element5.style.display = 'none';
-        element6.style.display = 'none';
     }
     if(nowHour === sleepTime1){
         element1.innerText = 'GOOD NIGHT !!';
         element2.innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
         element2.style.paddingLeft = '15px';
         image.setAttribute('src', './images/Good-Night.png');
-        element3.style.display = 'none';
-        element4.style.display = 'none';
-        element5.style.display = 'none';
-        element6.style.display = 'none';
     }
 }
 function timeNow(){

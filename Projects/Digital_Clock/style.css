@@ -11,6 +11,7 @@ body{
     width: 1366px;
     height: 860px;
     background-color: #3D087B ;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -98,7 +99,7 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 549px;
     left: 149px;
-    width: 500px;
+    width: 520px;
     height: 34px;
     font: normal normal 900 27px/34px Bauhaus Hv BT;
     color: #FFFFFF;
