@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello</h1>
+    <h1 id="text">Document Object Model</h1>
+    <div class="box">Hello Word</div>
+    <div class="cards">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+    <br>
+    <button onclick="change()">Change</button>
+    <br><br>
+    <div id="hello">Hello World</div>
+    <br>
+    <button onclick="replace()">Replace</button><br><br>
+    <div id="time"></div>
+    <div class="dropdown">
+        <select name="" id="drop">
+            <option value="">2020-2021</option>
+            <option value="">2021-2022</option>
+            <option value="">2022-2023</option>
+        </select>
+        <p>The Selected Text <span id="output"></span></p>
+        <button onclick="check()">Check</button>
+    </div><br><br>
+    <form>
+        <label for="name">NAME : </label>
+        <input type="text" id="name" placeholder="Enter name" value="" required><br><br>
+        <label for="mail">E-MAIL : </label>
+        <input type="email" id="mail" placeholder="Enter email" value="" required><br><br>
+        <label for="phone">CONTACT NO :</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91" required><br><br>
+        <label for="age">AGE :</label>
+        <input type="number" id="age" placeholder="Enter your age" value="" required>
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body{
+    width: 1366px;
+    background-color: black;
+}
+#main{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-left: 15%;
+    height: 500px;
+    margin-top: 80px;
+}
+.header{
+    height: 14%;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    /* border: 2px solid grey; */
+}
+#head{
+    font-size: 300%;
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    color: white;
+}
+#tasks{
+    float: right;
+    font-size: 200%;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 3%;
+    /* border: 2px solid goldenrod; */
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.fa-plus-circle{
+    font-size: 40px;
+    margin-top: 2px;
+    color: orangered;
+}
+.fa-plus-circle:hover{
+    color: red;
+}
+
+/* #no-items{
+    border: 2px solid green;
+} */
+
+/* Popup List */
+
+.popup_list{
+    text-align: center;
+    border: 2px solid rgb(233, 95, 95);
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    left: 36%;
+    z-index: 1;
+    border-radius: 12px;
+    background-color: white;
+}
+.add{
+    color:red;
+    font-size: x-large;
+}
+.textBox{
+    font-size: large;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+}
+.add_button{
+    border: none;
+    color: red;
+    font-size: 17px;
+    width: 90px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    height: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+    cursor: pointer;
+}
+.close-button{
+    border: none;
+    color: red;
+    font-size: 17px;
+    height: 40px;
+    width: 90px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;position: absolute;
+    bottom: 30px;
+    right: 80px;
+    cursor: pointer;
+}
+
+
+/* Contains Slots */
+
+
+.slots{
+    width: 20%;
+    height: 250px;
+    border: 1px solid rgb(233, 95, 95);
+    margin-bottom: 50px;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: white;
+}
+.contains-slots{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}

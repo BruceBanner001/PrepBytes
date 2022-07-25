@@ -219,7 +219,7 @@ body::-webkit-scrollbar {
     font-family: 'Manrope', sans-serif;
 }
 #time-banner-span{
-    background-color: span;
+    background-color: transparent;
     content: '';
     position: absolute;
     top: 60px;
