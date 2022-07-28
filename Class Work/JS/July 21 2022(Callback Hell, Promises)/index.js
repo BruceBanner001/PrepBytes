@@ -55,3 +55,6 @@ getId       //Consumer
     .catch((error) => {             //This is pointing reject
         console.log(error);
     })
+    .finally(() => {
+        console.log('The end of the Promise');
+    })
