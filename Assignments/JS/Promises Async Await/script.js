@@ -25,6 +25,32 @@ callBack("Tony", helloMyFriend)
 // 6
 // 7"
 
+const timeOut = () => {
+    setTimeout(() => {
+        console.log('I am called after 1 second');
+    }, 1000);
+    setTimeout(() => {
+        console.log('I am called after 2 seconds');
+    }, 2000);
+    setTimeout(() => {
+        console.log('I am called after 3 seconds');
+    }, 3000);
+    setTimeout(() => {
+        console.log('I am called after 4 seconds');
+    }, 4000);
+    setTimeout(() => {
+        console.log('I am called after 5 seconds');
+    }, 5000);
+    setTimeout(() => {
+        console.log('I am called after 6 seconds');
+    }, 6000);
+    setTimeout(() => {
+        console.log('I am called after 7 seconds');
+    }, 7000);
+}
+
+timeOut();
+
 // Explain callback hell.
 
 //Callback Hell -  Callbacks are just the name/convention  for using JavaScript.
@@ -156,3 +182,48 @@ const getId = new Promise((resolve, reject) => {
         .catch((err) => {
             console.log(err);
         });
+
+// Create examples to explain async await function
+
+// const getId = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let id = [1, 2, 3, 4, 5];
+//         resolve(id);
+//         reject("Error in Fetching ID");
+//     }, 2000);
+// })
+
+// const getEmpDetails = (data) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout((data) => {
+//             let empDetails = {
+//                 fName: 'Subramanian',
+//                 lName: 'Thayuman',
+//                 age: 22,
+//             }
+//             resolve(`The ID of the Employee is ${data} and Name of the Employee is ${empDetails.fName} ${empDetails.lName} and the Age is ${empDetails.age}`);
+//             reject('Error in fetching details of getEmpDetails');
+
+//         }, 2000, data);
+//     })
+// }
+
+// const getData = async () => {
+//     const id =  await getId;
+//     console.log(id);
+//     const empDetails = await getEmpDetails(id[2]);
+//     console.log(empDetails);
+// }
+// getData();
+
+// Create examples to explain promise.all function
+
+const promiseA = Promise.resolve(true);
+const promiseB = 'Hello';
+const promiseC = new Promise((resolve, reject) => {
+  setTimeout(resolve, 'true', 1000);
+});
+
+Promise.all([promiseA, promiseB, promiseC]).then((values) => {
+  console.log(values);
+});
