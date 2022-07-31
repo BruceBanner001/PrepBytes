@@ -15,7 +15,6 @@ function pop() {
     // document.querySelector('body').style.overflow = 'hidden';
     popUp[0].style.display = 'block';
 }
-let array = [];
 let count = 0;
 function increaseValueOfId() {  //this function for counting no of slots and assign id's for slots.
     return count++;
@@ -132,7 +131,7 @@ function added() {
         <button class="close-button" onclick="closed()">X</button>`;
         document.getElementById(`deleteConfirm${id}`).onclick = function () {
             document.querySelector('.contains-slots').removeChild(elementForSlots);
-        closed();
+            closed();
         }
     }
 }
