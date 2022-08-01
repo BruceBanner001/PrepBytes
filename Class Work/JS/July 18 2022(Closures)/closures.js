@@ -12,7 +12,7 @@ const ticketBooking = function(){
 
     return function(){
     // let passengerCount = 0; it will be called only once;
-    //So, even though the execution context is destroyed, the "variable environment" somehow keeps living somewhere in the engine.
+    //So, even though the execution context is destroyed, the "variable environment or lexical environment" somehow keeps living somewhere in the engine.
         console.log(`The count of the passengers are ${++passengerCount}`);
     }
 }

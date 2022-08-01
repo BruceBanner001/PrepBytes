@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1(29.07.2022)</title>
+</head>
+<body>
+    <h2>Difference between '==' and '===' ?</h2>
+        <p>
+            Double Equals('==') check only 'values'. Triple Equals ('===') checks both 'values' and 'Data types'.
+        </p>
+    <h2>What is the Spread Operator ?</h2>
+        <p>
+            It is new operator that introduced in ES6.
+            it used to expand or combine array or string.
+            Syntax - ...array
+        </p>
+    <h2>What are the difference between var, let and const ?</h2>
+        <p>
+            let : <br>
+                1. we can Declare the Variable Name in one line and initialize on another line.
+                2. The variables with same name aren't possible with let.
+                3. We can reassign/update the value of the variable.
+                4. let is block scoped.
+                5. let doesn't supports hoisting. ("Hoisting allows functions to be safely used in code before they are declared")
+        </p>
+        <p>
+            var : <br>
+            1. we can Declare the Variable Name in one line and initialize on another line.
+            2. The variables with same name are possible with var.
+            3. We can reassign/update the value of the variable.
+            4. let is global scoped.
+            5. var supports hoisting.
+        </p>
+        <p>
+            const: <br>
+                const : (introduced in ES6)
+                1. Must declare and initialize variable in the same line itself.
+                2. The variables with same name aren't possible with const.
+                3. We can't reassign/update the value of the variable.
+                4. const is block scoped.
+                5. const doesn't supports hoisting.
+        </p>
+    <h2>TDZ ?</h2>
+        <p>
+            <li>the term to describe the state where variables are un-reachable. They are in scope, but they aren't declared. The let and const variables exist in the TDZ from the start of their enclosing scope until they are declared.</li>
+        </p>
+    <h2>Global Execution ?</h2>
+        <p>
+            Global Execution Context (GEC). <br>
+            <li>
+                Whenever the JavaScript engine receives a script file, it first creates a default Execution Context known as the Global Execution Context (GEC) . The GEC is the base/default Execution Context where all JavaScript code that is not inside of a function gets executed. For every JavaScript file, there can only be one GEC.
+            </li>
+        </p>
+        <p>
+            Function Execution Context (FEC). <br>
+            <li>
+                Whenever a function is called, the JavaScript engine creates a different type of Execution Context known as a Function Execution Context (FEC) within the GEC to evaluate and execute the code within that function.
+            </li>
+            <li>
+                Since every function call gets its own FEC, there can be more than one FEC in the run-time of a script.
+            </li>
+        </p>
+    <h2>Closures ?</h2>
+        <li>
+            It is a Combination of inner function and lexical environment of outer function.
+        </li>
+        <li>
+            
+        </li>
+</body>
+</html>
