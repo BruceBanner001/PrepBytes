@@ -1,7 +1,8 @@
 //Async/Await - 
+// It was introduced in ES8
 //  They used to handle promises  more efficiently.
 //  The word async before a function always means that the function always "returns a promise". So, we therefore use async before the function name to return a promise instead of a value.
-//  Await is used to wait for the result that  is to be returned form the promise. So, we use await when we are calling a function which returns a promise.
+//  Await is used to wait for the result that  is to be returned from the promise. So, we use await when we are calling a function which returns a promise.
 //  Also, we can use them(Async/Await) for making API calls.
 //  Await is always used with Async only.
 

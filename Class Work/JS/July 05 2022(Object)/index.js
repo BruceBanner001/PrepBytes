@@ -41,7 +41,7 @@ addition(2, 4);
 
 //Pure functions - This is a function which gives you same output for same input passed. It doesn't give you 
 // different output for the same input every time we call the function. It doesn't depends on some variables 
-// whose value might change in the future, and therefore always gives u same values. Examples a function which
+// whose value might change in the future, and therefore always gives you same values. Examples a function which
 //  only uses constants in their body.
 
 
@@ -53,9 +53,23 @@ area(3);
 area(3);
 area(3);
 
+//Impure Functions ?
+// An impure function is a function that contains one or more side effects. It mutates data outside of its lexical scope and does not predictably produce the same output for the same input.
+
 function additionOne(a, b){ //impure function
     let result = 0; //the function will be determined by the variable inside. If the variable value change the output will change.
     result += a + b;
     console.log(result);
 }
 additionOne(1,3);
+
+var addNew = 0;
+
+function add(a,b){ 
+  addNew++; 
+  return a + b + addNew
+}
+
+console.log(add(4,5))
+console.log(add(4,5))
+console.log(add(4,5))
