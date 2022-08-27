@@ -9,7 +9,6 @@
 // If i use var instead const, this will become variable we can't 
 // call them using hi() , instead we can call hi; if we want use before even declared.
 
-
 //function definition / declaration / statement
 function hello(){ //Normal / General Function
     console.log('hello');

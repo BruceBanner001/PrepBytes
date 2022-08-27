@@ -5,7 +5,7 @@
 //2. The variables with same name aren't possible with let.
 //3. We can reassign/update the value of the variable.
 //4. let is block scoped.
-//5. let doesn't supports hoisting (Hoisting allows functions to be safely used in code before they are declared. Hoisting is a JavaScript Mechanism where variables and function declarations are moved to the top of the scope before the code execution.)
+//5. let doesn't supports hoisting (Hoisting allows functions to be safely used in code before they are declared. Hoisting is a JavaScript Mechanism where variables and function declarations are moved to the top of the scope internally before the code execution.)
 
 let myName;
 console.log(myName);
@@ -41,7 +41,7 @@ console.log(myCountry);
 myCountry = "Russia";
 console.log(myCountry)
 
-var myCountry = "Antartica";
+var myCountry = "Antarctica";
 console.log(myCountry);
 
 console.log("--------var End--------")
@@ -65,6 +65,6 @@ console.log(myPlace);
 myPlace = "Trichy";
 console.log(myPlace);
 
-//console.llog(myArea)  //Example for not defined
+//console.log(myArea)  //Example for not defined
 
 console.log("--------The End--------")

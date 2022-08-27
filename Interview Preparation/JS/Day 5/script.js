@@ -57,7 +57,7 @@ $('#show').click(function () {
 let array = [0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0];
 let num = 0;
 array.filter(element => element === 0 ? num++ : num)
-console.log(num);
+console.log(`Number of 0's in given array = ${num}`);
 
 
 // Given an array find out total no. of odd and even nos.
@@ -67,9 +67,11 @@ let odd = 0;
 let even = 0;
 arrayOfNumbers.filter(element => element % 2 === 0 ? even++ : odd++);
 console.log(`Count of Odd = ${odd} and Count of Even = ${even}`);
+
+
 // Given a string find out number of vowels ?
 
-let string = 'subramanian';
+let string = 'Bruce Banner';
 let vowels = 'aeiou';
 let count = 0;
 for (let i in string) {
@@ -79,7 +81,7 @@ for (let i in string) {
         }
     }
 }
-console.log(count);
+console.log(`Number of vowels = ${count}`);
 
 
 // Write a code to create two objects with 2 properties each, one will be string and other will be an array. Create a function to check if all the elements of the arrays in both the objects are same

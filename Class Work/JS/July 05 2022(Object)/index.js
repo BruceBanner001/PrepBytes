@@ -10,7 +10,7 @@ functionOne();
 
 //Method 2 = fat arrow function
 //we don't have function name and function keyword.
-//we assigning it to variable. we can access this using variable name followed by paranthesis.
+//we assigning it to variable. we can access this using variable name followed by parenthesis.
 const functionTwo = () => {
     console.log('This is Function 2');
 }
@@ -19,8 +19,8 @@ functionTwo();
 functionTwo; //when run nothing will happen
 
 //Method 3 = anonymous function
-//we have function keyword but not have function name insted we assinging
-//function to variable. we can access this function using variable name followed by paranthesis.
+//we have function keyword but not have function name instead we assigning
+//function to variable. we can access this function using variable name followed by parenthesis.
 const functionThree = function(){
     console.log('This is Function 3 and an anonymous function');
 }

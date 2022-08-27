@@ -17,7 +17,7 @@ function Student (fname, lname, gender, age){
 //     }
 // }
 
-const student1 = new Student('Subrmanian', 'Thayuman', 'Male', 22);
+const student1 = new Student('Subramanian', 'Thayuman', 'Male', 22);
 const student2 = new Student('Bruce', 'Banner', 'Male', 30);
 
 console.log(student1);
@@ -26,7 +26,7 @@ console.log(student1['firstName']);
 console.log(student1.firstName);
 
 let myObject = {
-    name : 'Subrmanian',
+    name : 'Subramanian',
     gender : 'Male',
     age : 22,
     showInfo : function() {

@@ -90,7 +90,7 @@ switch (value) {
 
 //LOOPS
 
-//Loops keeps on running until the condition statisfied.
+//Loops keeps on running until the condition satisfied.
 
 
 //for loop

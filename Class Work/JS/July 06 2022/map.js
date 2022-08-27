@@ -41,7 +41,7 @@ console.log("---------------------4-------------------");
 // mapTwo.clear(); //it will Clear entire map keys and values
 console.log(mapTwo.size); //size of a Map
 
-console.log(typeof(mapTwo)); //Object
+console.log(typeof mapTwo); //Object
 
 console.log('--------------------5--------------');
 
@@ -59,6 +59,8 @@ for(const [keys,values] of mapTwo.entries()){
     console.log(keys,values);
 }
 console.log("---------------------8-------------------");
+
+// foreach() = The forEach() method calls a function and iterates over the elements of an array. The forEach() method can also be used on Maps and Sets.
 
 mapTwo.forEach(function(value,key){//if two params then first is always value and then key
     console.log(key,value);

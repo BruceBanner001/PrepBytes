@@ -13,7 +13,7 @@
 //Method 1
 
 const setOne = new Set(['Apple', 'Orange', 'Mango'])
-console.log(setOne);
+console.log(setOne.size);
 
 //Method 2
 
@@ -28,16 +28,17 @@ console.log("---------------------1-------------------");
 console.log(setTwo[2]); //UNDEFINED
 
 console.log("---------------------2-------------------");
-
+setOne.delete('Apple')
+console.log(setOne);
 console.log(setTwo.has('Mobile')); //false
 console.log("---------------------3-------------------");
 
-setTwo.delete('Redmi'); //deletes redmi
+// setTwo.delete('Redmi'); //deletes redmi
 console.log(setTwo);
 console.log("---------------------4-------------------");
 
 // setTwo.clear(); //it will Clear  all entires
-console.log(setTwo.size); //size of a Map
+console.log(setTwo.size); //size of a Set
 
 console.log(typeof(setTwo)); //Object
 

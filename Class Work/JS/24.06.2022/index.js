@@ -9,9 +9,9 @@ console.log(10 * 5);    //50
 console.log(10 / 5);    //2
 console.log(10 % 5);    //0
 
-console.log("End Aritmetic Operators")
+console.log("End Arithmetic Operators")
 
-//Comparision Operators
+//Comparison Operators
 console.log(2 < 3);     //true
 console.log(2 > 3);     //false
 console.log(2 <= 3);     //true

@@ -83,12 +83,17 @@ console.log(redmi); // values will be undefined
 
 //this keyword
 
-//I an object this refers to the name of the object.
-//Alone(global space) this refers to the Global Object(Window Object) 
-//In regular function, this also points to the Global Object(Window)
-//Strict Mode -(use strict), this refers to undefined.
-//use strict mode inside the function.
-//when use strict mode window objects are restricted.
+// In JavaScript, the this keyword refers to an object.
+
+// Which object depends on how this is being invoked (used or called).
+
+// The this keyword refers to different objects depending on how it is used:
+// In an object method, this refers to the object.
+// Alone, this refers to the global object.
+// In a function, this refers to the global object.
+// In a function, in strict mode, this is undefined.
+// In an event, this refers to the element that received the event.
+// Methods like call(), apply(), and bind() can refer this to any object.
 
 //Fat arrow function do not support hoisting.
 //function supports hoisting.
