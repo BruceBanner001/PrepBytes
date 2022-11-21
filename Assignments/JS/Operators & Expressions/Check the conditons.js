@@ -12,7 +12,7 @@ Note: You have to complete Check function. No need to take any input.*/
 
 const Check = (A, B) => 
 {
-  if (A % 10 == 0 || B % 10 == 0) {
+  if (A % 10 === 0 || B % 10 === 0) {
     return true;
   }
   else{

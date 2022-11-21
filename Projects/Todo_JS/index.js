@@ -12,7 +12,6 @@ navigateToSeparateSlot.style.display = 'none';
 function pop() {
     blurMain.style.filter = 'blur(5px)';
     navigateToSeparateSlot.style.filter = 'blur(5px)';
-    // document.querySelector('body').style.overflow = 'hidden';
     popUp[0].style.display = 'block';
 }
 let count = 0;

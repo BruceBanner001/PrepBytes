@@ -8,7 +8,6 @@ document.querySelector('#image-screen').appendChild(image);
 
 let setAlarm = document.getElementById('set-alarm');
 
-
 //transition
 
 function alarmEnter(){

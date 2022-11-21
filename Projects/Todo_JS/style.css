@@ -70,7 +70,6 @@ a {
     width: 400px;
     height: 200px;
     box-sizing: border-box;
-    z-index: 1;
     position: absolute;
     top: 35%;
     left: 36%;
